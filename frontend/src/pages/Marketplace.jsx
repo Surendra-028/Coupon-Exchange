@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { Search, Clock, CheckCircle2, CreditCard, Lock, X } from 'lucide-react';
 
-const API_BASE = 'https://coupon-backend-xwky.onrender.com';
+const API_BASE = 'https://coupon-backend-xwky.onrender.com/api';
 
 export default function Marketplace() {
   const [coupons, setCoupons] = useState([]);

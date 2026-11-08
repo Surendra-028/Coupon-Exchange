@@ -1,0 +1,424 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #030712;
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.brand-icon {
+  background-color: #4f46e5;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  color: white;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.nav-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1e293b;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #38bdf8;
+  border: 1px solid #334155;
+}
+.logout-btn {
+  background-color: #1e293b;
+  color: #fb7185;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.logout-btn:hover {
+  background-color: #334155;
+}
+.signin-btn {
+  background-color: #4f46e5;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Layout */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Auth Page */
+.auth-wrapper {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.auth-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+}
+.auth-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.auth-subtitle {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 0.375rem;
+}
+.form-input, .form-select {
+  width: 100%;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  color: #fff;
+  font-size: 0.875rem;
+  outline: none;
+}
+.form-input:focus, .form-select:focus {
+  border-color: #4f46e5;
+}
+.primary-btn {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.primary-btn:hover {
+  background-color: #4338ca;
+}
+.auth-switch {
+  margin-top: 1.5rem;
+  text-align: center;
+  background: none;
+  border: none;
+  color: #818cf8;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.auth-switch:hover {
+  text-decoration: underline;
+}
+
+/* Marketplace Header & Strict 3-Card Grid */
+.marketplace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.filter-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.search-box {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  color: #64748b;
+  width: 1rem;
+  height: 1rem;
+}
+.search-input {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+  color: white;
+  font-size: 0.875rem;
+  outline: none;
+}
+.coupons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .coupons-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .coupons-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.coupon-card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s;
+}
+.coupon-card:hover {
+  border-color: #334155;
+}
+.coupon-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.category-badge {
+  background-color: rgba(79, 70, 229, 0.1);
+  color: #818cf8;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+}
+.expiry-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.coupon-footer {
+  border-top: 1px solid #1e293b;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-tag {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #34d399;
+}
+.buy-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.buy-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Success Banner */
+.success-banner {
+  background-color: rgba(52, 211, 153, 0.1);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dashboard Tabs & Tables */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.tabs-nav {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #1e293b;
+  margin-bottom: 1.5rem;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  color: #94a3b8;
+}
+.tab-btn.active {
+  border-bottom-color: #4f46e5;
+  color: #818cf8;
+}
+.table-container {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+.custom-table th {
+  background-color: #020617;
+  color: #cbd5e1;
+  padding: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #1e293b;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.custom-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #1e293b;
+}
+.custom-table tr:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 50;
+}
+.modal-card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 1rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 1.5rem;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.cancel-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+/* Stripe Checkout Modal Styling */
+.stripe-modal {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  max-width: 420px;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+.stripe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 0.75rem;
+}
+.stripe-logo {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  color: #635bff;
+  font-size: 1.25rem;
+}

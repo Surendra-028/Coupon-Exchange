@@ -66,7 +66,8 @@
 
 | Marketplace & Discovery | User Dashboard & Listings |
 | :---: | :---: |
-| ![Marketplace Preview](https://via.placeholder.com/400x220?text=Marketplace+Browse+UI) | ![Dashboard Preview](https://via.placeholder.com/400x220?text=User+Dashboard+UI) |
+| ![Marketplace Preview]<img width="1887" height="907" alt="image" src="https://github.com/user-attachments/assets/d7a9d6a7-42cb-4f66-a4f1-5a88f8a81088" />
+ | ![Dashboard Preview](https://via.placeholder.com/400x220?text=User+Dashboard+UI) |
 
 ---
 

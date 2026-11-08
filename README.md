@@ -38,3 +38,77 @@
 ## 🛠️ Tech Stack & Architecture
 
 ### 💻 System Workflow
+  
+  ┌─────────────────┐       HTTPS / REST       ┌─────────────────┐
+│  React Frontend │ ───────────────────────> │ Express Backend │
+│   (via Vercel)  │ <─────────────────────── │  (via Render)   │
+└─────────────────┘      Bearer JWT Token    └────────┬────────┘
+│
+│ Mongoose ODM
+▼
+┌─────────────────┐
+│  MongoDB Atlas  │
+│ (Cloud Database)│
+└─────────────────┘
+### 🛠️ Core Technologies
+
+| Category | Technology |
+| :--- | :--- |
+| **Frontend** | React 18, React Router v6, CSS3 Flexbox/Grid, Axios |
+| **Backend** | Node.js, Express.js, JSON Web Tokens (JWT), Bcrypt.js |
+| **Database** | MongoDB Atlas (Cloud Hosted) with Mongoose ODM |
+| **Security** | AES-256 Symmetric Encryption for unpurchased codes |
+| **Deployment** | Vercel (Frontend), Render (Backend) |
+
+---
+
+## 📸 Application Preview
+
+| Marketplace & Discovery | User Dashboard & Listings |
+| :---: | :---: |
+| ![Marketplace Preview](https://via.placeholder.com/400x220?text=Marketplace+Browse+UI) | ![Dashboard Preview](https://via.placeholder.com/400x220?text=User+Dashboard+UI) |
+
+---
+
+## ⚡ Quick Start & Local Setup
+
+Follow these steps to run the application locally on your machine:
+
+### 1️⃣ Clone the Repository
+```bash
+git clone [https://github.com/YOUR_GITHUB_USERNAME/coupon-exchange.git](https://github.com/YOUR_GITHUB_USERNAME/coupon-exchange.git)
+cd coupon-exchange
+
+2️⃣ Configure & Start Backend
+Bash
+cd backend
+
+Create a .env file in the backend/ folder:
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+ENCRYPTION_KEY=your_32_character_encryption_key
+npm install
+
+Start the backend server:
+Bash
+npm start
+
+3️⃣ Configure & Start Frontend
+Open a new terminal window:
+
+Bash
+cd frontend
+npm install
+npm start
+The application will open automatically in your browser at http://localhost:3000.
+
+📝 Seed Demo Data
+To populate your database with initial users and coupons for testing:
+
+Bash
+cd backend
+node seed.js
+📜 License
+Distributed under the MIT License. See LICENSE for more information.

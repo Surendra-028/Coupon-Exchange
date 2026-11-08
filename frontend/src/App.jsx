@@ -8,7 +8,7 @@ import Marketplace from './pages/Marketplace';
 import Dashboard from './pages/Dashboard';
 import SettingsPage from './pages/SettingsPage';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://coupon-backend-xwky.onrender.com';
 
 export default function App() {
   const [user, setUser] = useState(null);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://coupon-backend-xwky.onrender.com';
 
 export default function SettingsPage({ user, setUser }) {
   const [formData, setFormData] = useState({ username: user?.username || '', email: user?.email || '' });

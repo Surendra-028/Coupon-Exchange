@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { PlusCircle } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://coupon-backend-xwky.onrender.com';
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('purchases');

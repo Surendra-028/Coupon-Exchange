@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AlertCircle } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://coupon-backend-xwky.onrender.com';
 
 export default function AuthPage({ onAuthSuccess }) {
   const [isLogin, setIsLogin] = useState(true);

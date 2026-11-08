@@ -65,12 +65,13 @@
 
 ## 📸 Application Preview
 
-| Marketplace & Discovery |
-| :---: | :---: |
-| <img width="1887" height="907" alt="image" src="https://github.com/user-attachments/assets/d7a9d6a7-42cb-4f66-a4f1-5a88f8a81088" />
-| User Dashboard & Listings |
- | <img width="1912" height="902" alt="image" src="https://github.com/user-attachments/assets/7ceb09cc-5f83-4c4b-a38b-057123458503" />
-|
+### 🛒 Marketplace & Discovery
+<img width="100%" alt="Marketplace Preview" src="https://github.com/user-attachments/assets/d7a9d6a7-42cb-4f66-a4f1-5a88f8a81088" />
+
+---
+
+### 📊 User Dashboard & Listings
+<img width="100%" alt="Dashboard Preview" src="https://github.com/user-attachments/assets/7ceb09cc-5f83-4c4b-a38b-057123458503" />
 
 ---
 

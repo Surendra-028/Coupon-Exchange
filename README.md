@@ -19,7 +19,7 @@
 
 | Component | Platform | URL |
 | :--- | :--- | :--- |
-| **🌐 Frontend Application** | **Vercel** | [https://coupon-exchange.vercel.app](https://coupon-exchange.vercel.app) |
+| **🌐 Frontend Application** | **Vercel** | [https://coupon-exchange-amber.vercel.app](https://coupon-exchange-amber.vercel.app) |
 | **⚙️ Backend API Base** | **Render** | [https://coupon-backend-xwky.onrender.com/api](https://coupon-backend-xwky.onrender.com/api) |
 
 ---

@@ -1,21 +1,40 @@
-🎟️ CouponX — Peer-to-Peer Digital Coupon Marketplace
+# 🎟️ CouponX — Peer-to-Peer Digital Coupon Marketplace
 
-📌 Overview
+![React](https://img.shields.io/badge/Frontend-React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![NodeJS](https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Framework-Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 
-CouponX is a modern, full-stack Peer-to-Peer (P2P) Coupon & Voucher Exchange Marketplace. Built with the MERN stack (MongoDB, Express, React, Node.js), it enables users to list, discover, buy, and sell digital gift cards, promo codes, and discount vouchers securely.
+---
 
-The platform solves a common problem: unredeemed discount vouchers going to waste. Sellers cash out unused coupons, while buyers unlock instant savings on their favorite brands.
+## 📌 Overview
 
-🚀 Live Demo & Endpoints
+**CouponX** solves a common everyday problem: unredeemed discount vouchers and promo codes going to waste. It provides a secure, modern marketplace where sellers can monetize unused gift cards and buyers can grab instant savings across top brands.
 
-Resource
+---
 
-URL
+## 🚀 Live Links
 
-Frontend Application
+| Component | Platform | URL |
+| :--- | :--- | :--- |
+| **🌐 Frontend Application** | **Vercel** | [https://coupon-exchange.vercel.app](https://coupon-exchange.vercel.app) |
+| **⚙️ Backend API Base** | **Render** | [https://coupon-backend-xwky.onrender.com/api](https://coupon-backend-xwky.onrender.com/api) |
 
-https://coupon-exchange.vercel.app
+---
 
-Backend API Base
+## ✨ Key Features
 
-https://coupon-backend-xwky.onrender.com/api
+* 🔐 **Secure Authentication**: JWT-based user login & registration with encrypted session persistence.
+* 🛍️ **Coupon Marketplace**: Dynamic browsing grid with real-time category filtering & instant search.
+* 🛡️ **AES-256 Code Encryption**: Sensitive coupon codes remain encrypted until a verified transaction completes.
+* 💳 **Simulated Checkout**: Seamless, friction-free purchase workflow for instant coupon code retrieval.
+* 📊 **User Dashboard**: Track active listings, view sales history, and manage account credentials.
+* 📱 **Mobile-Responsive**: Fully optimized for seamless browsing across desktops, tablets, and smartphones.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+### 💻 System Workflow
